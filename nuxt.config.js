@@ -1,6 +1,6 @@
 export default {
   head: {
-    title: 'NEFA',
+    title: 'The FirstBite',
     htmlAttrs: {
       lang: 'en',
     },
@@ -29,6 +29,9 @@ export default {
         tailwindcss: {},
         autoprefixer: {},
       },
+      extend(config, ctx){
+        config.resolve.alias['vue'] = 'vue/dist/vue.common';
+      }
     },
   },
   /**
